@@ -1,0 +1,6 @@
+extends layout
+  
+block content
+  ul
+    each event in events
+      li= event.title + ' at ' + event.time + ' in ' + event.location

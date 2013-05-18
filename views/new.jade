@@ -1,0 +1,17 @@
+extends layout
+  
+block content
+  form(action='/new', method='post')
+    div
+      label(for='title') Title
+      input(type='text', name='title', id='title')
+    
+    div
+      label(for='location') Location
+      input(type='text', name='location', id='location')
+      
+    div
+      label(for='time') Time
+      input(type='text', name='time', id='time')
+      
+    input(type='submit', name='Submit')
